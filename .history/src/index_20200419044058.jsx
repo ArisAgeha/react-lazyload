@@ -52,8 +52,6 @@ const checkOverflowVisible = function checkOverflowVisible(component, parent) {
     ({ top: parentTop, left: parentLeft, height: parentHeight, width: parentWidth } = defaultBoundingClientRect);
   }
 
-  if ([parentTop, parentLeft, parentHeight, parentWidth].every(val => val === 0)) return;
-
   const windowInnerHeight = window.innerHeight || document.documentElement.clientHeight;
   const windowInnerWidth = window.innerWidth || document.documentElement.clientWidth;
 
